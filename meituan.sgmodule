@@ -1,8 +1,9 @@
 #!name=美团去广告
 #!desc=yes yes
 [Rule]
-DOMAIN,s3plus.meituan.net,REJECT
+#!DOMAIN,s3plus.meituan.net,REJECT
 [URL Rewrite]
+^https?:\/\/s3plus\.meituan\.net\/v1\/[0-9a-zA-Z-_=/?.]*\/brandcpt-vedio\/[0-9a-zA-Z-_=/?.]* - reject
 ^https?:\/\/img\.meituan\.net/bizad/bizad_brandCpt_[0-9]*\.jpg\.webp@1284w_1l - reject
 ^https?:\/\/p[0-9]\.meituan\.net[0-9a-zA-Z-_=/?.]*\/bizad[0-9a-zA-Z-_=/?.]* - reject
 [Script]
