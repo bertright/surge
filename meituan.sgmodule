@@ -10,4 +10,4 @@ Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 [Panel]
 Sub_info = script-name=Sub_info,update-interval=600
 [MITM]
-hostname = api.coolapk.com
+hostname = %APPEND% api.coolapk.com
