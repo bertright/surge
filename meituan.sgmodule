@@ -5,7 +5,7 @@
 ^https?:\/\/img\.meituan\.net/bizad/bizad_brandCpt_[0-9]*\.jpg\.webp@1284w_1l - reject
 ^https?:\/\/p[0-9]\.meituan\.net[0-9a-zA-Z-_=/?.]*\/bizad[0-9a-zA-Z-_=/?.]* - reject
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FALEaFHI6RXoUDHMM%3Fheader%3Dtrue&reset_day=1&title=Dler%20Cloud&icon=cloud.fill&color=#FFFFFF
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2stoPFr8pwwWSy5IRvXpQ%3Fheader%3Dtrue&reset_day=1&title=Dler%20Cloud&icon=cloud.fill&color=#FFFFFF
 酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 [Panel]
 Sub_info = script-name=Sub_info,update-interval=600
