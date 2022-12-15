@@ -1,10 +1,11 @@
-#!name=美团去广告
+#!name=HCC去广告
 #!desc=yes yes
 [URL Rewrite]
 ^https?:\/\/s3plus\.meituan\.net\/v1\/[0-9a-zA-Z-_=/?.]*\/brandcpt-vedio\/[0-9a-zA-Z-_=/?.]* - reject
 ^https?:\/\/img\.meituan\.net\/bizad\S* - reject
 ^https?:\/\/p[0-9]*\.meituan\.net\/bizad\S* - reject
+^https:\/\/b\.appsimg\.com\/upload\/momin\/\S*\.jpg!85\.webp - reject
 [Script]
 酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 [MITM]
-hostname = %APPEND%  *.meituan.net, api.coolapk.com
+hostname = %APPEND%  *.appsimg.com, *.meituan.net, api.coolapk.com
