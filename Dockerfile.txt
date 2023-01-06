@@ -1,0 +1,11 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -y vim ssh wget cmake git-core ccache gnupg flex bison gperf build-essential cpio zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip openjdk-8-jdk bc gawk busybox libssl-dev liblz4-tool rsync device-tree-compiler
+
+RUN apt-get install -y software-properties-common && add-apt-repository -y ppa:deadsnakes/ppa && apt-get update && apt-get install -y python python-pip && pip install pyelftools 
+
+RUN wget https://cmake.org/files/v3.16/cmake-3.16.5-Linux-x86_64.tar.gz
+&&tar -xzvf cmake-3.16.5-Linux-x86_64.tar.gz && mv cmake-3.16.5-Linux-x86_64 /opt/cmake-3.16.5 && ln -sf /opt/cmake-3.16.5/bin/*  /usr/bin/
+# 设置root默认密码，配置ssh-server
+RUN echo 'root:qwert12345' | chpasswd && sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config  && sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config 
+
