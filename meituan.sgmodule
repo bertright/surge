@@ -1,9 +1,13 @@
 #!name=HCC去广告
 #!desc=yes yes
 [URL Rewrite]
+#美团
 ^https?:\/\/s3plus\.meituan\.net\/v1\/[0-9a-zA-Z-_=/?.]*\/brandcpt-vedio\/[0-9a-zA-Z-_=/?.]* - reject
 ^https?:\/\/img\.meituan\.net\/bizad\S* - reject
 ^https?:\/\/p[0-9]*\.meituan\.net\/bizad\S* - reject
+#1688
+^https?:\/\/gw\.alicdn\.com\/imgextra\/i\d+\/S*\.(png|jpg)_760x760q90\.jpg_\.webp\S* - reject
+
 ^https:\/\/b\.appsimg\.com\/upload\/momin\/\S*\.jpg!85\.webp - reject
 ^https:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\S*jpg$ - reject
 [Script]
