@@ -7,10 +7,11 @@
 ^https?:\/\/p[0-9]*\.meituan\.net\/bizad\S* - reject
 #1688
 ^https?:\/\/gw\.alicdn\.com\/imgextra\/i\d+\/\S*\.(jpg|png)_(760x760q90|q90)\.jpg_\.webp\S* - reject
-
 ^https:\/\/b\.appsimg\.com\/upload\/momin\/\S*\.jpg!85\.webp - reject
 ^https:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\S*jpg$ - reject
+#智行出行
+^https:\/\/dimg04\.c-ctrip.com\/images\S*.png -reject
 [Script]
 #！酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 [MITM]
-hostname = %APPEND%  m.360buyimg.com, *.appsimg.com, *.meituan.net
+hostname = %APPEND%  m.360buyimg.com, *.appsimg.com, *.meituan.net *.c-ctrip.com
