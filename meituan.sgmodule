@@ -3,6 +3,8 @@
 [URL Rewrite]
 #发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\S* - reject
+#广发银行
+^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\S* - reject
 #美团
 ^https?:\/\/s3plus\.meituan\.net\/v1\/[0-9a-zA-Z-_=/?.]*\/brandcpt-vedio\/[0-9a-zA-Z-_=/?.]* - reject
 ^https?:\/\/img\.meituan\.net\/bizad\S* - reject
