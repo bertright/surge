@@ -2,7 +2,7 @@
 #!desc=yes yes
 [URL Rewrite]
 #发现精彩
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\S* reject
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\S* - reject
 #美团
 ^https?:\/\/s3plus\.meituan\.net\/v1\/[0-9a-zA-Z-_=/?.]*\/brandcpt-vedio\/[0-9a-zA-Z-_=/?.]* - reject
 ^https?:\/\/img\.meituan\.net\/bizad\S* - reject
