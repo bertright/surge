@@ -2,7 +2,7 @@
 #!desc=yes yes
 [URL Rewrite]
 #招商银行 掌声生活
-^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\S* -reject
+^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\S* - reject
 #发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\S* - reject
 #广发银行
@@ -18,7 +18,7 @@
 ^https:\/\/b\.appsimg\.com\/upload\/momin\/\S*\.jpg!85\.webp - reject
 ^https:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\S*jpg$ - reject
 #智行出行
-^https:\/\/dimg04\.c-ctrip.com\/images\S*.png -reject
+^https:\/\/dimg04\.c-ctrip.com\/images\S*.png - reject
 [Script]
 #！酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 [MITM]
