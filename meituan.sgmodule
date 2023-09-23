@@ -3,7 +3,8 @@
 [URL Rewrite]
 
 #招商银行 掌声生活
-#^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\S* - reject  #res.cc.cmbimg.com
+^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
+^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
 
 #发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\S* - reject
@@ -24,4 +25,4 @@
 [Script]
 #！酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 [MITM]
-hostname = %APPEND%  m.360buyimg.com, *.appsimg.com, *.meituan.net, *.c-ctrip.com, static.95508.com
+hostname = %APPEND%  m.360buyimg.com, *.appsimg.com, *.meituan.net, *.c-ctrip.com, static.95508.com, az1mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com
