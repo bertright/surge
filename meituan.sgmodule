@@ -1,6 +1,7 @@
 #!name=HCC去广告
 #!desc=yes yes
 [URL Rewrite]
+
 #招商银行 掌声生活
 ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\S* - reject
 #发现精彩
