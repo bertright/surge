@@ -7,7 +7,7 @@
 ^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec\S* - reject
 
 #bilibili
-^https?:\/\/i0\.hdslb\.com\/bfs\/sycp\S* - reject
+^https?:\/\/i[0-9]*\.hdslb\.com\/bfs\/sycp\S* - reject
 
 #发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/(.+1125?.+2436|.+%.+%|.+_.+_) - reject
