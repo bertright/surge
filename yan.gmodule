@@ -1,9 +1,0 @@
-#!name=羊了个羊快速通关
-#!desc=该模块治疗羊了个羊上瘾症
-#!system=ios
-
-[URL Rewrite]
-^(https://cat-match.easygame2021.com/sheep/v1/game/map_info\?map_id=).*(?<!80001)$ https://cat-match.easygame2021.com/sheep/v1/game/map_info?map_id=80001 header
-
-[MITM]
-hostname = %APPEND% cat-match.easygame2021.com
