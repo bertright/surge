@@ -3,11 +3,9 @@
 [URL Rewrite]
 
 #招商银行 掌声生活
-^https?:\/\/az1mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
-^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
 
 #bilibili
-^https?:\/\/i[0-9]*\.hdslb\.com\/bfs\/sycp - reject
+
 
 #发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/(.+1125?.+2436|.+%.+%|.+_.+_) - reject
